@@ -27,30 +27,29 @@ void dfs(int size, int x, int y) {
 		dfs(size / 2, x, y);
 	}
 	else {
-		cnt += pow(2, size / 2);
+		cnt += size / 2 * size / 2;
 	}
 	//2사분면
 	if (check(size / 2, x, y + size / 2)) {
 		dfs(size / 2, x, y + size / 2);
 	}
 	else {
-		cnt += pow(2, size / 2);
+		cnt += size / 2 * size / 2;
 	}
 	//3사분면
 	if (check(size / 2, x + size / 2, y)) {
 		dfs(size / 2, x + size / 2, y);
 	}
 	else {
-		cnt += pow(2, size / 2);
+		cnt += size / 2 * size / 2;
 	}
 	//4사분면
 	if (check(size / 2, x + size / 2, y + size / 2)) {
 		dfs(size / 2, x + size / 2, y + size / 2);
 	}
 	else {
-		cnt += pow(2, size / 2);
+		cnt += size / 2 * size / 2;
 	}
-
 
 }
 int main() {
