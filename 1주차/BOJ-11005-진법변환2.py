@@ -1,10 +1,8 @@
 number, base = map(int, input().split())
-baseList = [str(x) for x in range(10)]
-if base >= 10:
-    for y in range(65, 65+(base-10)):
-        baseList.append(chr(y))
 newNumber = []
-while number > 0:
-    newNumber.append(baseList[number % base])
+while number:
+    remainder = number % base
+    x = str(remainder) if remainder < 10 else chr(65 + (remainder - 10))
+    newNumber.append(x)
     number = number//base
-print(''.join(reversed(newNumber)))
+print(''.join(newNumber[::-1]))
