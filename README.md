@@ -1,4 +1,12 @@
-## 1주차 스터디 (2020.07.09 - 16)
+## Problem Solving
+
+**BOJ (Baekjoon Online Judge)**
+
+* [[백준 1074번] Z](https://www.acmicpc.net/problem/1074)
+
+* [[백준 1697번] 숨바꼭질](https://www.acmicpc.net/problem/1697)
+
+* [[백준 11279번] 최대힙](https://www.acmicpc.net/problem/11279)
 
 * [[백준 1929번] 소수구하기](https://www.acmicpc.net/problem/1929)
 
