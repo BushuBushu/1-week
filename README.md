@@ -1,6 +1,6 @@
 ## Problem Solving
 
-**BOJ (Baekjoon Online Judge)**
+### **BOJ (Baekjoon Online Judge)**
 
 * [[백준 1074번] Z](https://www.acmicpc.net/problem/1074)
 
@@ -24,4 +24,9 @@
 
 * [[백준 9517번] 아이 러브 크로아티아](https://www.acmicpc.net/problem/9517)
 
-  
+
+
+### **프로그래머스 (Programmers)**
+
+* [[카카오인턴] 키패드누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
+
