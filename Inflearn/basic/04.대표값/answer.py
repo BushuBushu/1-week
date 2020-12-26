@@ -2,11 +2,11 @@ import sys
 import math
 
 def solution():
-    avg = round(sum(nums)/len(nums))
+    avg = int(sum(nums)/len(nums)+0.5)
     diffs = []
     for idx, num in enumerate(nums):
         diffs.append([idx, num, abs(avg-num)])
-    min_diff, max_num, answer   = math.inf, -math.inf, -1
+    min_diff, max_num, answer = math.inf, -math.inf, -1
     for idx, num, diff in diffs:
         if diff < min_diff:
             min_diff, max_num, answer = diff, num, idx

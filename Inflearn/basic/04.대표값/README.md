@@ -52,5 +52,22 @@
 
 ## 새롭게 알게되거나 공유해서 알게된 점
 
+### round_half_even vs round_half_up
+- round_half_even
+    
+    소수점 아래를 버리고 짝수
+  
+    <b>Python에서 제공하는 기본함수 round()는 round_half_even을 따른다.</b>
+    하지만 일반적으로 알고 있는 반올림은 0.5이상일 때 올림을 하고 0.5미만일 때 버림을 하는 것이다.
+    이와 같은 방식을 round_half_up이라 부른다. 
+    즉, 일반적인 상식과 같은 방향으로 동작하게 하기위해서는 round()를 쓰면 안되고 다른 방식을 써야 한다.
+    
+- round_half_up
 
+    소수점 0.5 이상일 때 올림, 소수점 0.5 미만일 때 버림
+
+    해결방식   
+   ```python
+    result = int(num/d + 0.5)
+    ```
 ## 고생한 점
