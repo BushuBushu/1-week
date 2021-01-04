@@ -19,21 +19,21 @@
     ```
 2. 1개 행에 대한 체크
     ```python
-   for idx in range(9):
-       nums = input().split()
-       if not checkNums(nums): return "NO"
+    for idx in range(9):
+        row = input().split()
+        if not checkNums(row): return "NO"
     ```
 3. 9개 열에 대한 정보 업데이트 
    ```python
-   for _idx, num in enumerate(nums):
+   for _idx, num in enumerate(row):
        cols[_idx].add(num)
    ```
 
 4. 3*3 격자에 대한 정보 업데이트
     ```python
-   sqrs[0 + 3 * (idx // 3)].extend(nums[:3])
-   sqrs[1 + 3 * (idx // 3)].extend(nums[3:6])
-   sqrs[2 + 3 * (idx // 3)].extend(nums[6:])
+   sqrs[0 + 3 * (idx // 3)].extend(row[:3])
+   sqrs[1 + 3 * (idx // 3)].extend(row[3:6])
+   sqrs[2 + 3 * (idx // 3)].extend(row[6:])
    
    if idx % 3 == 2:
        for _idx in range(idx - 2, idx + 1):
@@ -42,8 +42,8 @@
 
 5. 열에 대한 체크
     ```python
-   for col in cols.values():
-       if checkNums(col) != 9: return "NO"
+    for col in cols.values():
+        if not checkNums(col): return "NO"
     ```
 
 ### checkNums
