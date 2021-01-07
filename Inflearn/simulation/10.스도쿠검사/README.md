@@ -15,7 +15,7 @@
     for idx in range(9):
         cols[idx], sqrs[idx] = set(), []
     for idx in range(9):
-        nums = input().split()
+        row = input().split()
     ```
 2. 1개 행에 대한 체크
     ```python
