@@ -53,6 +53,28 @@ def getGrid(n):
 ```
 
 ## 새롭게 알게되거나 공유해서 알게된 점
+- all() 적용
+all 함수를 이용해서 코드를 줄일 수 있었다.
 
+적용 전 코드는 다음과 같다.
+```python
+for dx, dy in moves:
+    new_row = row + dx
+    new_col = col + dy
+    if grid[row][col] <= grid[new_row][new_col]:
+        isPeak = False
+        break
+    if isPeak:
+        total += 1
+```
+
+all함수 적용 코드
+```python
+for row in range(1, n + 1):
+    for col in range(1, n + 1):
+        if all(grid[row][col] > grid[row + moves[idx][0]][col + moves[idx][1]]
+                for idx in range(4)):
+            total += 1
+```
 
 ## 고생한 점
