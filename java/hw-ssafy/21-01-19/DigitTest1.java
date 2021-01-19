@@ -14,9 +14,8 @@ public class DigitTest1 {
 			int[] count = new int[10]; 
 			while (st.hasMoreTokens()) {
 				int val = Integer.parseInt(st.nextToken());
-				if (val != 0) {
-					count[val/10] += 1;	
-				}
+				if (val == 0) break;
+				count[val/10] += 1;
 			}
 			System.out.println(toString(count));
 		}catch(IOException e) {
