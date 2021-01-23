@@ -1,6 +1,6 @@
-# 42586번 기능개발 
+# 49993번 스킬트리 
 
-[문제보기](https://programmers.co.kr/learn/courses/30/lessons/42586)
+[문제보기](https://programmers.co.kr/learn/courses/30/lessons/49993)
 
 ## 설계
 1. skill tree 재정의
