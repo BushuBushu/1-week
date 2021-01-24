@@ -45,7 +45,7 @@ public class Solution22 {
 					curX += dirX * jump;
 					curY += dirY * jump;
 					
-					boolean check = curX < n && curX >= 0 && curY < n && curY >= 0;
+					boolean check = curX < n && curX >= 0 && curY < n && curY >= 0 && (!lake[curX][curY]);
 	
 					if(!check) {
 						count--;

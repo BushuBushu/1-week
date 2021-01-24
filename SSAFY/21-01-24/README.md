@@ -111,7 +111,7 @@ JUMP: for (int jump=MAX_JUMP; jump > 0; jump--) {
     curX += dirX * jump;
     curY += dirY * jump;
 
-    boolean check = curX < n && curX >= 0 && curY < n && curY >= 0;
+    boolean check = curX < n && curX >= 0 && curY < n && curY >= 0 && !lake[curX][curY];
 
     if(!check) {
         count--;
@@ -128,4 +128,4 @@ JUMP: for (int jump=MAX_JUMP; jump > 0; jump--) {
 
 
 ### ✅ 후기
-
+- 혜인님의 리뷰를 통해서 소금쟁이가 매번 뛸때마다 true인 곳에 가는지 확인해주는 조건이 빠진 것을 알게되었다. 문제를 꼼꼼히 설계하고 경우의 수를 고려하는 습관을 갖추고 싶다.. 화이팅!
