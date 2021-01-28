@@ -38,7 +38,7 @@ function GCD(a, b) {
 }
 ```
 
-### 2. 모든 tree와 skill 확인하기
+### 2. 2,3,4 단계 적용
 
 
 ```javascript
