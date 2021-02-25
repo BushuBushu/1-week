@@ -4,7 +4,7 @@ function solution(N, number) {
   const groups = getGroups(N);
   const cases = getCases();
 
-  for (let i = 7; i < 8; i++) {
+  for (let i = 1; i < 8; i++) {
     for (let j = 0; j < cases[i].length; j++) {
       const [c1, c2] = cases[i][j];
       groups[i] = new Set([
@@ -20,6 +20,7 @@ function solution(N, number) {
   return -1;
 }
 
+// getGroups() : 숫자 N을 사용한 회수에 따라 1에서 8까지 나눈 그룹 초기화
 const getGroups = (N) =>
   Array(8)
     .fill(null)
@@ -27,6 +28,7 @@ const getGroups = (N) =>
       return [+String(N).repeat(idx + 1)];
     });
 
+// getCases() : 8개 그룹에 대한 숫자 N 사용하는 모든 경우의 수 찾기
 const getCases = () =>
   Array(8)
     .fill(null)
