@@ -7,7 +7,7 @@ function solution(people, limit) {
   while (l <= r) {
     if (people[l] + people[r] <= limit) l++;
     count++;
-    r--;
+    r--; //최소값과 최댓값이 limit보다 크면 최댓값을 보트태워보낸다
   }
   return count;
 }
